@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: #eee;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .slide {
+      width: 180px;
+      height: 420px;
+      background-color: rgba(105, 101, 101, 0.6);
+      padding: 20px 0;
+      margin: 100px;
+      position: relative;
+    }
+
+    .slide ul {
+      list-style: none;
+    }
+
+    .slide ul li {
+      width: 100%;
+      height: 42px;
+      line-height: 42px;
+      text-align: left;
+      padding-left: 30px;
+      /* 防止容器撑大 */
+      box-sizing: border-box;
+    }
+
+    .slide ul li:hover {
+      background-color: rgb(255, 165, 0);
+    }
+
+    .slide ul li a {
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+    }
+
+    .slide-image {
+      width: 792px;
+      height: 460px;
+      background-color: white;
+      position: absolute;
+      top: 0;
+      left: 180px;
+      border: 1px solid #e0e0e0;
+      border-left: none;
+      display: none;
+    }
+
+    .slide-image img {
+      max-width: 100%;
+      height: 100%;
+    }
+
+    .slide-image.permanent {
+      display: block;
+    }
+
+    .slide ul li:hover>.slide-image {
+      display: block;
+    }
+
+    .slide-image.permanent {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="slide">
+    <ul>
+      <div class="slide-image permanent">
+        <img src="image/IMG_0272.PNG">
+      </div>
+      <li>
+        <a href="#">安可</a>
+        <div class="slide-image">
+          <img src="image/IMG_0261.JPG">
+
+        </div>
+      </li>
+      <li>
+        <a href="#">椿</a>
+        <div class="slide-image">
+          <img src="image/IMG_0266.JPG">
+        </div>
+      </li>
+      <li>
+        <a href="#">折枝</a>
+        <div class="slide-image">
+          <img src="image/IMG_0265.JPG">
+        </div>
+      </li>
+      <li>
+        <a href="#">吟霖</a>
+        <div class="slide-image">
+          <img src="image/IMG_0268.JPG">
+        </div>
+      </li>
+      <li>
+        <a href="#">长离</a>
+        <div class="slide-image">
+          <img src="image/IMG_0267.JPG">
+        </div>
+    </ul>
+  </div>
+</body>
+
+</html>
